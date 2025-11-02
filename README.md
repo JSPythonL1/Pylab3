@@ -310,20 +310,33 @@ for v in enumerate(nums):
 ## Zadania do wykonania
 :one: Wypróbuj kody z _listingów_ znajdujących się w instrukcji i sprawdź ich działanie.
 
-:two: Napisz skrypt wypełniający tablicę znakami, a następnie wyświetl znaki w kolejności odwrotnej do wprowadzania. Dane wprowadzane z klawiatury.
+:two: Napisz funkcję `reverse_input_characters()`, która:
+- wczytuje z klawiatury znaki (do momentu naciśnięcia Enter),
+- zapisuje je w tablicy,
+- zwraca ciąg znaków w odwrotnej kolejności.
   
-:three: Wypełniający tablicę liczbami losowymi rzeczywistymi z przedziału (-5,5). Wartość tablicy zapisz do pliku _result.txt_
+:three: Napisz funkcję `save_random_array(filename)`, która:
+- generuje tablicę 10 liczb losowych typu float z zakresu (-5, 5),
+- zapisuje je do pliku tekstowego _filename.txt_ (po jednej liczbie w linii),
+- zwraca listę tych wartości.
 
-:four: Napisz funkcję tworzącą tablicę dwuwymiarową _(5x5)_ która zostanie wypełniona kwadratami liczb z komórek z wiersza wcześniejszego. Pierwszy wiersz wypełniony wartościami 2,3,4,5,6. Do utworzenia tablicy dwuwymiarowej wykorzystaj bibiotekę NumPy.
-Bibliotekę można zainstalować przy pomocy polecenia:
-```Bash
-python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
-```
+:four: Napisz funkcję `generate_square_matrix()`, która:
+- tworzy macierz 5x5 (NumPy),
+- pierwszy wiersz zawiera liczby _[2, 3, 4, 5, 6]_,
+- każdy kolejny wiersz to kwadraty liczb z komórek z wiersza wcześniejszego,
+- zwraca macierz.
 
-:five: Napisz funkcję, która jako parametr przyjmuje lokalizację pliku tekstowego który zawiera dowolny tekst i zwraca histogram znaków występujących w tym napisie (czyli pary znak-liczba wystąpień). Wynikiem powinien być słownik. Przykład:
+:five: Napisz funkcję `histogram(filename)`, która:
+- odczytuje tekst z pliku,
+- zwraca słownik {znak: liczba_wystąpień}.
+
+Wynikiem powinien być słownik. 
+
+Przykład: 
+`dokument zawiera tekst: _Ala ma kota_`
 
 `>>> histogram("document.txt")`
- dokument zawiera tekst: _Ala ma kota_
+
 `{'t': 1, 'a': 3, 'l': 1, 'A': 1, 'k': 1, 'm': 1, 'o': 1}`
 
 :six: Napisz następujące funkcje niezbędne do implementacji gry w pokera pięciokartowego dobieranego:
