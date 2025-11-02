@@ -1,5 +1,6 @@
 import pytest
 
+
 def pytest_terminal_summary(terminalreporter, exitstatus):
     total = terminalreporter._numcollected
     passed = len(terminalreporter.stats.get("passed", []))
