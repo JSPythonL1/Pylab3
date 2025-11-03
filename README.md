@@ -341,7 +341,7 @@ Przykład:
 
 :six: Napisz następujące funkcje niezbędne do implementacji gry w pokera pięciokartowego dobieranego:
 
-1. deck() - zwraca listę reprezentującą talię kart w kolejności od najmłodszej do najstarszej. Każda karta posiada 2 atrybuty, będące łańcuchem tekstowym:
+1. `deck()` - zwraca listę reprezentującą talię kart w kolejności od najmłodszej do najstarszej. Każda karta posiada 2 atrybuty, będące łańcuchem tekstowym:
 
 + rangę - możliwe wartości: `'2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'D', 'K', 'A'` (karty od 2 do 10 oraz walet, dama, król, as)
 + kolor - możliwe wartości:
@@ -358,9 +358,9 @@ Przykład:
     # 🂡
     reprezentowany będzie jako ('A', 's'). Lista powinna zawierać 52 elementy (13 rang * 4 kolory).
 
-2. shuffle_deck(deck) - przyjmuje listę kart, zwraca karty potasowane (permutacja). Skorzystaj z: 
+2. `shuffle_deck(deck)` - przyjmuje listę kart, zwraca karty potasowane (permutacja). Skorzystaj z: 
 
-3. deal(deck, n) - przyjmuje talię kart (deck) oraz liczbę graczy (n), zwraca n-elementową listę 5-elementowych list z kartami rozdanymi graczom. Każda 5-elementowa lista kart gracza zawiera 5 krotek reprezentujących kartę.
+3. `deal(deck, n)` - przyjmuje talię kart (deck) oraz liczbę graczy (n), zwraca n-elementową listę 5-elementowych list z kartami rozdanymi graczom. Każda 5-elementowa lista kart gracza zawiera 5 krotek reprezentujących kartę.
 
 ## :exclamation: zadania 2-6 mają zostać dodane na GitHuba :exclamation:
 ![Python](https://images82.fotosik.pl/1039/3a63951b4e7a84f6med.jpg)
