@@ -315,10 +315,10 @@ for v in enumerate(nums):
 - zapisuje je w tablicy,
 - zwraca ciąg znaków w odwrotnej kolejności.
   
-:three: Napisz funkcję `save_random_array(filename)`, która:
+:three: Napisz funkcję `save_random_array(directory, filename)`, która:
 - generuje tablicę 10 liczb losowych typu float z zakresu (-5, 5),
-- zapisuje je do pliku tekstowego _filename.txt_ (po jednej liczbie w linii),
-- zwraca listę tych wartości.
+- zapisuje je do pliku tekstowego _filename.txt_ (po jednej liczbie w linii) znajdującym się w katalogu _directory_,
+- zwraca utworzoną tablicę jako wynik funkcji.
 
 :four: Napisz funkcję `generate_square_matrix()`, która:
 - tworzy macierz 5x5 (NumPy),
@@ -326,18 +326,23 @@ for v in enumerate(nums):
 - każdy kolejny wiersz to kwadraty liczb z komórek z wiersza wcześniejszego,
 - zwraca macierz.
 
-:five: Napisz funkcję `histogram(filename)`, która:
-- odczytuje tekst z pliku,
-- zwraca słownik {znak: liczba_wystąpień}.
-
-Wynikiem powinien być słownik. 
+:five: Napisz funkcję `histogram(input_path, output_path)`, która:
+- wczyta zawartość pliku tekstowego input_path;
+- policzy, ile razy występuje każdy znak (bez rozróżniania wielkości liter);
+- zapisze wynik do pliku `output_path` w formacie:
+```Python
+a: 3
+b: 1
+...
+```
+- wynikiem powinien być słownik. 
 
 Przykład: 
 `dokument zawiera tekst: _Ala ma kota_`
 
-`>>> histogram("document.txt")`
+`>>> histogram("document.txt", "result.txt")`
 
-`{'t': 1, 'a': 3, 'l': 1, 'A': 1, 'k': 1, 'm': 1, 'o': 1}`
+`{'t': 1, 'a': 4, 'l': 1, 'k': 1, 'm': 1, 'o': 1}`
 
 :six: Napisz następujące funkcje niezbędne do implementacji gry w pokera pięciokartowego dobieranego:
 
